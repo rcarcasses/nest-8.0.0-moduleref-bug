@@ -1,4 +1,4 @@
-# Nest 8.0.0 breaks `moduleRef` injection in dependent project
+# `moduleRef` instance not injected in dependent module
 
 Steps to reproduce:
 
@@ -13,7 +13,6 @@ yarn add @nestjs/core @nestjs/common rxjs reflect-metadata
 cd ..
 npx nest create workspace-b
 cd workspace-b
-yarn add @nestjs/core @nestjs/common rxjs reflect-metadata
+...
 # edit package.json to follow https://classic.yarnpkg.com/en/docs/workspaces/ to add two workspaces
-touch package.json
 ```
